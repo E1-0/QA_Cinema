@@ -7,21 +7,23 @@ public class calculations {
 
 	int std, oap, stu, chd;
 	Scanner user = new Scanner(System.in);
-	
-	public void userInput() {
-		
-	// user input: amount of tickets required
-		System.out.print("\nNumber of Standard Tickets: ");
-		std = user.nextInt();
 
-		System.out.print("Number of OAP Tickets: ");
-		oap = user.nextInt();
-		
-		System.out.print("Number of Student Tickets: ");
-		stu = user.nextInt();
-		
-		System.out.print("Number of Child Tickets: ");
-		chd = user.nextInt();
+	public void userInput() {
+
+		// user input: amount of tickets required
+		try {
+			System.out.print("\nNumber of Standard Tickets: ");
+			std = user.nextInt();
+
+			System.out.print("Number of OAP Tickets: ");
+			oap = user.nextInt();
+
+			System.out.print("Number of Student Tickets: ");
+			stu = user.nextInt();
+
+			System.out.print("Number of Child Tickets: ");
+			chd = user.nextInt();}
+		catch (Exception ee) {System.out.println("Only enter numbers...");}
 	}
 
 	public void ticketPrices() {
